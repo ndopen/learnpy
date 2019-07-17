@@ -20,28 +20,34 @@ def peoque(name, request='a'):
         }
     }
 
+    # 标签简写
+    # 简码标签，获取对比用户输入的值，［思路待实现］
+    kyes = {'q':'phone', 'a':'addr'}
+
     #　打印标签 
     labels = {
         'phone' : '电话号码',
         'addr' : '地址'
     }
 
+    key = request
+
     # 判断查询内容
     if request == 'q':
         key = 'phone'
-    elif request == 'a':
-        key = 'addr'
     else:
-        print('输入错误!')
+        key = 'addr'
 
     # 查询人员数据并返回数据
-    if name in people:
-        print("{}{}：{}".format(name, labels[key],people[name][key]))
-    else:
-        print('查询数据失败!')
+    person = people.get(name, {})
+    label = labels.get(key, key)
+    result = person.get(key, '查询数据为空!')
+
+    print("{} {} : {}.".format(name, label, result))
 
 
-name = input('输入姓名:')
-request = input('查询电话号码输入（q），查询地址输入（a）:')
+name = input('输入查询人姓名：')
+request = input('输入想查询的内容（＂ｑ＂为地址＼＂ａ＂为地址）')
 
-peoque(name,request)
+peoque(name, request)
+# print(peoque)
