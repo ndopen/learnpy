@@ -27,8 +27,16 @@
 #         # names[index] = '[censored]'
 #         print(names[index], index)
 
-s = ['E', 'c', 'D', 'A']
-d = {'d':2, 'c':7, 'i':0}
-print(' '.join(reversed('Hello,String')))
-print(sorted(s, key=str.lower))
-print(list(reversed(s)))
+# s = ['E', 'c', 'D', 'A']
+# d = {'d':2, 'c':7, 'i':0}
+# print(' '.join(reversed('Hello,String')))
+# print(sorted(s, key=str.lower))
+# print(list(reversed(s)))
+
+from math import sqrt
+
+for n in range(99, 0, -1):
+    root = sqrt(n)
+    if root == int(root):
+        print(n)
+        break
