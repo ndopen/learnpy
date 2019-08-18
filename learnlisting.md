@@ -4,3 +4,8 @@
 
 # git 分支
 - dev
+
+## command
+||command|
+|-|-|
+|检索版本|python --version|
