@@ -1,21 +1,21 @@
-# 斐波那契数(每个列表数据都是前两个的和)
-# fids = [0, 1]
-# num = int(input('How many Fibonacci numbers do you want? '))
+import random
 
-# for i in range(num-2):
-#     fids.append(fids[-2] + fids[-1])
-# print(fids)
 
-# def fibs(num):
-#      result = [0, 1]
-#      for i in range(num-2):
-#          result.append(result[-2] + result[-1])
-#      return result
-# fibs(20)
+def generate_code(code_len=4):
+    """
+    生成指定长度的验证码
 
-# print(callable(fibs))
+    :param code_len: 验证码的长度(默认4个字符)
 
-# CreateFuntion
-def hello(name):
-    return 'hello' + name
-hello('cock')
+    :return: 由大小写英文字母和数字构成的随机验证码
+    """
+    all_chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    last_pos = len(all_chars) - 1
+    code = ''
+    for _ in range(code_len):
+        index = random.randint(0, last_pos)
+        code += all_chars[index]
+    return code
+ 
+run = generate_code(6)
+print(run)
