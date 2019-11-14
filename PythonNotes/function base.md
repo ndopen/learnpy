@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-11-14 22:52:38
+ * @LastEditTime: 2019-11-14 23:09:14
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /learnpy/PythonNotes/function base.md
+ -->
 # 目录
 * [1.callable函数](#1.callable)
 * [2.createFuntion](#2.CreateFuntion)
@@ -15,7 +23,8 @@ True
 ```
 
 # 2.CreateFuntion
-> 使用def关键字定义函数
+> 使用def关键字定义函数，并向函数传递值；
+- 在定义函数时创建的参数为`形参`，在调用函数时定义的参数为`实参`;
 ```python
 # CreateFuntion
 def hello(name):
