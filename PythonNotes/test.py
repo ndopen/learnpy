@@ -1,21 +1,24 @@
-import random
+# first_name = 'yang'
+# last_name = 'yongxiang'
+
+# full_name = f"{first_name} {last_name}"
+# print(f"Hello {full_name.title()}")
 
 
-def generate_code(code_len=4):
-    """
-    生成指定长度的验证码
+# print("languages:\n\tpython\n\tC\n\tJavaScript")
 
-    :param code_len: 验证码的长度(默认4个字符)
+# l_languages = "  python"
+# r_languages = "  j a  vascript\t\nd   "
+# languages = " c "
 
-    :return: 由大小写英文字母和数字构成的随机验证码
-    """
-    all_chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    last_pos = len(all_chars) - 1
-    code = ''
-    for _ in range(code_len):
-        index = random.randint(0, last_pos)
-        code += all_chars[index]
-    return code
- 
-run = generate_code(6)
-print(run)
+# l_languages = l_languages.lstrip()
+# r_languages = r_languages.strip()
+# languages = languages.strip()
+
+# print(r_languages)
+
+# messages = 'hi i\'m yangyongxiang, how\'ar you?'
+messages = "hi i 'm yangyongxiang, how'ar you?"
+
+
+x,y,z = 0,1,messages
