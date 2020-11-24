@@ -18,6 +18,9 @@
 # print(r_languages)
 
 # messages = 'hi i\'m yangyongxiang, how\'ar you?'
+from typing import get_type_hints
+
+
 messages = "hi i 'm yangyongxiang, how'ar you?"
 
 

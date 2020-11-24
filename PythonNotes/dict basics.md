@@ -27,7 +27,8 @@ itemes = {'name':'gumby', 'age':42}
 >>> items = [('name', 'gumby'), ('age', 42)]
 >>> d= dict(items)
 >>> d
-{'name': 'gumby', 'age': 42}
+{'name': 'gum40.
+.by', 'age': 42}
 >>> d['name']
 'gumby'
 
