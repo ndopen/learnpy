@@ -25,3 +25,15 @@ messages = "hi i 'm yangyongxiang, how'ar you?"
 
 
 x,y,z = 0,1,messages
+
+class classname(object):
+    """
+    docstring
+    """
+    def __init__(self,):
+        pass
+    def funcname(parameter_list):
+        """
+        docstring
+        """
+        pass
